@@ -39,13 +39,15 @@ def main():
 
     try:
         while procs:
-            for p, c in procs:
-                ret = p.poll()
+            for l in procs:
+                proc, cmd = l
+
+                ret = proc.poll()
                 if ret is not None:
-                    print "finish: ", c
+                    print "finish: \"%s\"" % cmd
                     print "restarting..."
-                    procs.remove(p)
-                    procs.append([wrap(c), c])
+                    procs.remove(l)
+                    procs.append([wrap(cmd), cmd])
 
             else:
                 time.sleep(0.1)
@@ -55,8 +57,8 @@ def main():
         pass
 
     finally:
-        for p, c in procs:
-            p.terminate()
+        for proc, cmd in procs:
+            proc.terminate()
 
 
 if __name__ == "__main__":
