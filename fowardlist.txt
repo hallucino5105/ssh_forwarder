@@ -5,6 +5,7 @@ ssh -o ServerAliveInterval=15 -NCL 21200:192.168.4.89:22 repo      # hadclient s
 ssh -o ServerAliveInterval=15 -NCL 21201:192.168.4.80:50030 repo   # namenode hadoop jobtracker
 ssh -o ServerAliveInterval=15 -NCL 21202:192.168.4.80:50070 repo   # namenode hadoop hdfs
 ssh -o ServerAliveInterval=15 -NCL 21203:192.168.4.80:60010 repo   # namenode hadoop hbasea
+ssh -o ServerAliveInterval=15 -NCL 21204:192.168.4.80:8888 repo   # namenode hadoop hue
 
 ssh -o ServerAliveInterval=15 -NCL 21300:192.168.0.49:22 repo      # ym0vm ssh
 ssh -o ServerAliveInterval=15 -NCL 21301:192.168.0.49:5000 repo    # ym0vm cloudforecast

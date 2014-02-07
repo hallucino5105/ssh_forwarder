@@ -6,7 +6,7 @@ import time
 import subprocess
 
 
-config_file_path = "./foward_list.txt"
+config_file_path = "./fowardlist.txt"
 
 
 def wrap(commandline):
