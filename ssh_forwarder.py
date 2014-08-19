@@ -6,7 +6,7 @@ import time
 import subprocess
 
 
-config_file_path = os.path.abspath(os.path.dirname(__file__)) + "/fowardlist.txt"
+config_file_path = os.path.abspath(os.path.dirname(__file__)) + "/forwardlist.txt"
 
 
 def wrap(commandline):
@@ -29,7 +29,8 @@ def getcommand():
             if comment_pos != -1:
                 line = line[:comment_pos].strip()
 
-            procs.append([wrap(line), line])
+            if line:
+                procs.append([wrap(line), line])
 
     return procs
 
