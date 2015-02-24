@@ -1,1 +1,0 @@
-ssh -o ServerAliveInterval=15 -NCL 21403:192.168.0.211:443 repo    # githost https
