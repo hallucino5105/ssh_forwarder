@@ -29,9 +29,13 @@ def getcommand():
             if not line:
                 continue
 
-            comment_pos = line.find(r"#")
-            if comment_pos != -1:
-                line = line[:comment_pos].strip()
+            comment1_pos = line.find(r"#")
+            if comment1_pos != -1:
+                line = line[:comment1_pos].strip()
+
+            comment2_pos = line.find(r"//")
+            if comment2_pos != -1:
+                line = line[:comment2_pos].strip()
 
             if line:
                 procs.append([wrap(line), line])
