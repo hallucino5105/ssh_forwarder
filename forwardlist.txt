@@ -8,8 +8,8 @@ ssh -o ServerAliveInterval=15 -gNCL 21200:192.168.4.210:7180 repo    # hadoop2 a
 
 #ssh -o ServerAliveInterval=15 -gNCL 21300:192.168.0.211:8000 repo    # githost redmine
 #ssh -o ServerAliveInterval=15 -gNCL 21301:192.168.0.211:8001 repo    # githost gitlab
-#ssh -o ServerAliveInterval=15 -gNCL 21302:192.168.0.211:80 repo      # githost http
-#ssh -o ServerAliveInterval=15 -gNCL 21303:192.168.0.211:443 repo     # githost https
+ssh -o ServerAliveInterval=15 -gNCL 21302:192.168.0.211:80 repo      # githost http
+ssh -o ServerAliveInterval=15 -gNCL 21303:192.168.0.211:443 repo     # githost https
 #ssh -o ServerAliveInterval=15 -gNCL 21304:192.168.0.211:22 repo      # githost ssh
 
 #ssh -o ServerAliveInterval=15 -gNCL 21400:192.168.0.1:80 repo        # router
