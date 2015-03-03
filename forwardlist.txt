@@ -31,3 +31,5 @@ ssh -o ServerAliveInterval=15 -gNCL 21900:192.168.10.161:3389 repo // vsphere re
 ssh -o ServerAliveInterval=15 -gNCL 22000:192.168.4.92:22 repo   // nissan-qcs
 
 ssh -o ServerAliveInterval=15 -gNCL 3000:192.168.10.69:3000 repo   // cartodb
+
+ssh -o ServerAliveInterval=15 -gNCL 22100:192.168.4.49:3306 repo  // evdb mysql
